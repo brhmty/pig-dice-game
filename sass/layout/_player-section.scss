@@ -17,12 +17,15 @@
   }
 }
 
-.--left {
+.--left,
+.--right {
   background-color: variables.$color-player-turn;
+}
+.--left {
+  opacity: variables.$opacity-active-color;
 }
 
 .--right {
-  background-color: variables.$color-player-turn;
   opacity: variables.$opacity-passive-color;
 }
 

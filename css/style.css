@@ -38,12 +38,16 @@ body {
   border-radius: 10px;
 }
 
-.--left {
+.--left,
+.--right {
   background-color: #bfeaf5;
 }
 
+.--left {
+  opacity: 1;
+}
+
 .--right {
-  background-color: #bfeaf5;
   opacity: 0.5;
 }
 

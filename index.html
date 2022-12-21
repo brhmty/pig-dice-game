@@ -12,45 +12,50 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="main">
-        <div class="__player --left">
+        <div class="__player --left" id="player_left">
           <div class="__player-name">
             <h2 class="player-left">PLAYER 1</h2>
           </div>
           <div class="__player-score">
-            <h1 class="total-socre-left">0</h1>
+            <h1 class="total-score-left" id="point_total_left">0</h1>
           </div>
           <div class="__current-score">
             <h3 class="current-score-right">CURRENT</h3>
-            <p>0</p>
+            <p id="point_current_left">0</p>
           </div>
         </div>
-        <div class="__player --right">
+        <div class="__player --right" id="player_right">
           <div class="__player-name">
             <h2 class="player-right">PLAYER 2</h2>
           </div>
           <div class="__player-score">
-            <h1 class="total-socre-right">0</h1>
+            <h1 class="total-score-right" id="point_total_right">0</h1>
           </div>
           <div class="__current-score">
             <h3 class="current-score-right">CURRENT</h3>
-            <p>0</p>
+            <p id="point_current_right">0</p>
           </div>
         </div>
       </div>
       <div class="buttons">
-        <button class="__new-game --button">
+        <button class="__new-game --button" id="button_new_game">
           <i class="fa-solid fa-arrow-rotate-right"></i> NEW GAME
         </button>
-        <img src="./assets/images/dice0.png" alt="dice image" class="dice" />
-        <button class="__roll --button">
+        <img
+          src="./assets/images/dice0.png"
+          alt="dice image"
+          class="dice"
+          id="img_dice"
+        />
+        <button class="__roll --button" id="button_roll">
           <i class="fa-solid fa-dice"></i> ROLL DICE
         </button>
-        <button class="__hold --button">
+        <button class="__hold --button" id="button_hold">
           <i class="fa-sharp fa-solid fa-piggy-bank"></i> HOLD
         </button>
       </div>

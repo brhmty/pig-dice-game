@@ -1,0 +1,11 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.main {
+  @include mixins.width-height(
+    variables.$width-container,
+    variables.$height-container
+  );
+  @include mixins.center;
+  @include mixins.flex-direction(row);
+}

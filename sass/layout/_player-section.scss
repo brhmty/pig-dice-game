@@ -1,0 +1,52 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+.__player {
+  position: relative;
+  width: variables.$width-container;
+  height: variables.$height-container;
+  @include mixins.flex-direction(column);
+
+  .__current-score {
+    @include mixins.width-height(40%, 100px);
+    @include mixins.center-horizontally;
+    position: absolute;
+    bottom: variables.$bottom-items;
+    background-color: variables.$color-gradient-left;
+    border-radius: 10px;
+  }
+}
+
+.--left {
+  background-color: variables.$color-player-turn;
+}
+
+.--right {
+  background-color: variables.$color-player-turn;
+  opacity: variables.$opacity-passive-color;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+h1,
+p {
+  margin-top: -10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: lighter;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+p {
+  font-size: 1.5em;
+}

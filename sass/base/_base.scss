@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+body {
+  background: linear-gradient(
+    to right,
+    variables.$color-gradient-left,
+    variables.$color-gradient-right
+  );
+}
+
+.container {
+  position: relative;
+  width: variables.$width-full;
+  height: variables.$height-full;
+}

@@ -1,0 +1,10 @@
+@use "../abstracts/mixins";
+
+.--button {
+  border: none;
+  border-radius: 50px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
